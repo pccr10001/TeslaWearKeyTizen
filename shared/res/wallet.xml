@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application name="li.power.app.tizen.teslanak">
+   <wallet>
+      <aid-group category="other">
+         <aid aid="F465736C614C6F6769633030325801"
+              se_type="hce" unlock="false" power="sleep"/>
+              <aid aid="7465736c614c6f676963"
+              se_type="hce" unlock="false" power="sleep"/>
+              <aid aid="F465736c614c6f676963"
+              se_type="hce" unlock="false" power="sleep"/>
+      </aid-group>
+   </wallet>
+</application>

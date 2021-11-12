@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="5.5" package="li.power.app.tizen.teslanak" version="1.0.0">
+    <author email="app@power.li" href="https://power.li">PowerLi</author>
+    <description>An app for Tizen that allows you to wear a watch to unlock your Tesla Model 3.&#13;
+Based on HCE, the watch emulates as Tesla Key Card to interact with the vehicle.</description>
+    <profile name="wearable"/>
+    <ui-application appid="li.power.app.tizen.teslanak" exec="teslawearkey" hw-acceleration="on" launch_mode="single" multiple="false" nodisplay="false" splash-screen-display="false" taskmanage="true" type="capp">
+        <label>teslawearkey</label>
+        <icon>teslawearkey.png</icon>
+        <metadata key="http://tizen.org/metadata/nfc_cardemulation" value="/shared/res/wallet.xml"/>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/nfc.cardemulation</privilege>
+        <privilege>http://tizen.org/privilege/nfc</privilege>
+        <privilege>http://tizen.org/privilege/keymanager</privilege>
+        <privilege>http://tizen.org/privilege/secureelement</privilege>
+    </privileges>
+    <feature name="http://tizen.org/feature/network.nfc">true</feature>
+    <feature name="http://tizen.org/feature/network.nfc.card_emulation.hce">true</feature>
+    <feature name="http://tizen.org/feature/network.nfc.card_emulation">true</feature>
+</manifest>
